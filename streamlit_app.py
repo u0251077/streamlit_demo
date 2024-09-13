@@ -2,7 +2,7 @@ from openai import OpenAI
 import streamlit as st
 
 # 添加下拉選單至 sidebar 來選擇模型
-selected_model = st.sidebar.selectbox("Select Model", ["gpt-4o", "gpt-3.5-turbo", "gpt-4-turbo", "gpt-4o-mini", "o1-preview"])
+selected_model = st.sidebar.selectbox("Select Model", ["gpt-4o", "gpt-3.5-turbo", "gpt-4-turbo", "gpt-4o-mini", "o1-preview","o1-mini"])
 
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
